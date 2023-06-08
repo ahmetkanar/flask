@@ -69,7 +69,7 @@ def process_image():
 
     # Process the image using the provided code
     img = np.array([load_image(image_path)])
-    model = keras.models.load_model('/Users/bugraozdilek/Desktop/model_with_10000_4.h5')
+    model = keras.models.load_model('model_with_10000_4.h5')
     predictions = model.predict(img)
 
     # Get the highest label and corresponding values
