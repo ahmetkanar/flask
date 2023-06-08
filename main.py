@@ -7,6 +7,7 @@ import keras
 from flask_cors import CORS
 from datetime import date
 import os
+import keras.utils as image
 
 app = Flask(__name__)
 CORS(app)
@@ -55,7 +56,7 @@ def improved_canny_algorithm(path):
 
 def load_image(path):
     edges = improved_canny_algorithm(path)
-    img_array = keras.preprocessing.image.img_to_array(edges)
+    img_array = image.img_to_array(edges)
     return img_array
 
 
