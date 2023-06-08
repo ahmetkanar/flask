@@ -5,9 +5,7 @@ itsdangerous==1.1.0
 Jinja2==2.11.3
 MarkupSafe==1.1.1
 Werkzeug==1.0.1
-cv2
-numpy
-keras
-flask_cors
-datetime
-os
+opencv-python==4.7.0.72
+numpy==1.24.3
+keras==2.12.0
+flask-cors==3.0.10
